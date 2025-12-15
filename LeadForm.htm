@@ -1,0 +1,508 @@
+Merge Event Web-To-Lead Draft
+
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DWK000004gIiz" method="POST">
+
+<header>
+  <div class="nav-container">
+    <ul class="nav-list">
+      <li><a href="https://mergeeventgroup.com/#/">HOME</a></li>
+      <li><a href="https://mergeeventgroup.com/about">ABOUT</a></li>
+      <li><a href="https://mergeeventgroup.com/services">SERVICES</a></li>
+
+      <!-- Center Logo -->
+      <li class="logo-item">
+        <a href="https://mergeeventgroup.com/#/">
+          <img src="https://static.showit.co/200/74DznR-KP2QBD22cnuf_Yg/shared/merge_m_purple.png" alt="Company Logo">
+        </a>
+      </li>
+
+      <li><a href="https://mergeeventgroup.com/portfolio">GALLERY</a></li>
+      <li><a href="https://mergeeventgroup.com/studio">THE STUDIO</a></li>
+      <li><a href="https://mergeeventgroup.com/contact">CONTACT</a></li>
+    </ul>
+  </div>
+</header>
+
+<input type=hidden name="oid" value="00DWK000004gIiz">
+<input type=hidden name="retURL" value="https://mergeeventgroup.com/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="vincent.paolo.quiambao@siroccogroup.com">                        -->
+<!--  ----------------------------------------------------------------------  -->
+<br/>
+<div class="form-title">
+<h1 class="h1-style">GENERAL INQUIRIES</h1>
+<p class="p-style">Curious about what we do or how we can collaborate? Send us a quick note, and someone from our team will get back to you shortly</p><br />
+</div>
+
+<div class="form-group">
+  <label class="label-style" for="first_name">FIRST NAME</label>
+  <input id="first_name" maxlength="40" name="first_name" type="text">
+</div>
+
+<div class="form-group">
+  <label class="label-style" for="last_name">LAST NAME</label>
+  <input id="last_name" maxlength="80" name="last_name" type="text">
+</div>
+
+<div class="form-group">
+  <label class="label-style" for="email">EMAIL</label>
+  <input id="email" maxlength="80" name="email" type="text">
+</div>
+
+<div class="form-group">
+  <label class="label-style" for="company">COMPANY</label>
+  <input id="company" maxlength="40" name="company" type="text">
+</div>
+
+<!-- <div class="form-group">
+  <label class="label-style" for="city">CITY</label>
+  <input id="city" maxlength="40" name="city" type="text">
+</div>
+
+<div class="form-group">
+  <label class="label-style" for="state">STATE/PROVINCE</label>
+  <input id="state" maxlength="20" name="state" type="text">
+</div> -->
+
+<div class="form-group">
+<br />
+  <label class="label-style" for="address">ADDRESS</label>
+  <input type="text" id="address" name="address" placeholder="Start typing your address...">
+  <div id="autocomplete-list" class="autocomplete-suggestions">
+  </div>
+</div>
+
+
+<textarea id="street" name="street" hidden></textarea>
+  <input type="text" id="city" name="city" hidden>
+ <input type="text" id="state" name="state" hidden>
+<input type="text" id="zip" name="zip" hidden>
+
+<div class="form-group">
+  <label class="label-style">CONTRACTING AMOUNT</label>
+  <input id="00NWK000003vMDw" maxlength="255" name="00NWK000003vMDw" type="text">
+</div>
+
+<div class="form-group">
+  <label class="label-style">EVENT NAME</label>
+  <input id="00NWK000003vONJ" maxlength="255" name="00NWK000003vONJ" type="text">
+</div>
+
+<div class="form-group">
+  <label class="label-style">EVENT DESCRIPTION</label>
+  <select id="00NWK000003vRGH" name="00NWK000003vRGH">
+    <option value="">--None--</option>
+    <option value="Wedding">Wedding</option>
+    <option value="Social">Social</option>
+    <option value="Higher Education">Higher Education</option>
+    <option value="Corporate">Corporate</option>
+    <option value="Incentive">Incentive</option>
+    <option value="Non-profit">Non-profit</option>
+    <option value="Christmas">Christmas</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label class="label-style">VENUE TYPE</label>
+  <select id="00NWK000003vOdS" name="00NWK000003vOdS">
+    <option value="">--None--</option>
+    <option value="Hotel">Hotel</option>
+    <option value="Resort">Resort</option>
+    <option value="Ballroom">Ballroom</option>
+    <option value="Outdoor Venue">Outdoor Venue</option>
+    <option value="Private Estate">Private Estate</option>
+    <option value="Barn/Farm">Barn/Farm</option>
+    <option value="Historic Venue">Historic Venue</option>
+    <option value="Restaurant">Restaurant</option>
+    <option value="Country Club">Country Club</option>
+    <option value="Event Center">Event Center</option>
+    <option value="Museum/Theater">Museum/Theater</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label class="label-style">PROGRAM START DATE</label>
+  <input id="00NWK000003vPw9" name="00NWK000003vPw9" type="text">
+</div>
+
+<div class="form-group">
+  <label class="label-style">PROGRAM END DATE</label>
+  <input id="00NWK000003vRMj" name="00NWK000003vRMj" type="text">
+</div>
+
+<div class="form-group">
+  <label class="label-style">BUDGET</label>
+  <select id="00NWK000003vRWP" name="00NWK000003vRWP">
+    <option value="">--None--</option>
+    <option value="Less than $10,000">Less than $10,000</option>
+    <option value="$10,000 - 25,000">$10,000 - 25,000</option>
+    <option value="$25,000 - 50,000">$25,000 - 50,000</option>
+    <option value="$50,000 - 100,000">$50,000 - 100,000</option>
+    <option value="$100,000+">$100,000+</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label class="label-style">GUEST COUNT</label>
+  <input id="00NWK000003vNvq" name="00NWK000003vNvq" type="text">
+</div>
+<div class="form-group">
+<input class="submit-btn" type="submit" value="SUBMIT">
+</div>
+</form>
+
+<script>
+const apiKey = '2ad247c32c5b4d9b9234aab237d6b52f';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const addressInput = document.getElementById('address');
+  const autocompleteList = document.getElementById('autocomplete-list');
+
+  addressInput.addEventListener('input', () => {
+    const value = addressInput.value.trim();
+    if (value.length < 3) {
+      autocompleteList.innerHTML = '';
+      return;
+    }
+
+    fetch(
+ 	 `https://api.geoapify.com/v1/geocode/autocomplete` +
+ 	 `?text=${encodeURIComponent(value)}` +
+  	`&type=street` +
+  	`&limit=5` +
+  	`&format=geojson` +
+  	`&apiKey=${apiKey}`
+	)
+      	.then(response => response.json())
+      	.then(data => {
+        autocompleteList.innerHTML = '';
+
+        if (!data.features || data.features.length === 0) {
+          return; // no suggestions
+        }
+
+        data.features.forEach(feature => {
+          const item = document.createElement('div');
+          item.classList.add('autocomplete-suggestion');
+          item.textContent = feature.properties.formatted;
+
+          item.addEventListener('click', () => {
+            addressInput.value = feature.properties.formatted;
+            document.getElementById('city').value =
+ 		 feature.properties.city ||
+  		feature.properties.town ||
+ 		 feature.properties.village ||
+  		'';
+
+		document.getElementById('state').value =
+  		feature.properties.state_code ||  // e.g. NY, CA
+  		feature.properties.state ||
+  		'';
+		
+		document.getElementById('street').value = feature.properties.street || '';
+		autocompleteList.innerHTML = '';
+         
+
+
+		document.getElementById('zip').value = feature.properties.postcode || '';
+		autocompleteList.innerHTML = '';
+          });
+
+          autocompleteList.appendChild(item);
+        });
+      })
+      .catch(err => {
+        console.error('Geoapify API error:', err);
+        autocompleteList.innerHTML = '';
+      });
+  });
+
+
+
+addressInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault(); // stop form submission
+  }
+});
+
+// Close suggestions when clicking outside
+  document.addEventListener('click', (e) => {
+    if (e.target !== addressInput) {
+      autocompleteList.innerHTML = '';
+    }
+  });
+});
+
+
+
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --nav-font-size: 10px;
+  --nav-font-color: #5F5D5D;
+  --nav-font-hover: #927AA2;
+  --nav-font-family: "Poppins", sans-serif;
+  --nav-font-weight: 200;
+  --nav-font-weight-hover: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.nav-list li a {
+  color: var(--nav-font-color);
+  font-size: var(--nav-font-size);
+  font-family: var(--nav-font-family);
+  font-weight: var(--nav-font-weight);
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  transition: 0.25s ease;
+}
+
+.nav-list li a:hover {
+  color: var(--nav-font-hover);
+  font-weight: var(--nav-font-weight-hover);
+}
+
+.logo-item img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.label-style {
+  color: var(--nav-font-color);
+  font-size: var(--nav-font-size);
+  font-family: var(--nav-font-family);
+  font-weight: 600;
+}
+
+.h1-style {
+  color: var(--nav-font-color);
+  font-size: 20px;
+  font-family: var(--nav-font-family);
+  font-weight: 20;
+  letter-spacing: 1.5px;
+}
+
+.p-style {
+  color: var(--nav-font-color);
+  font-size: var(--nav-font-size);
+  font-family: var(--nav-font-family);
+  width: 50%;
+}
+
+.form-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 5%;		
+}
+
+.form-title {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+ 
+  margin-left: 5%;		
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #5F5D5D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--nav-font-size);
+  font-family: var(--nav-font-family);
+}
+
+.submit-btn:hover {
+  background: #a0978d;
+}
+
+.autocomplete-suggestions {
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  background: #fff;
+  z-index: 1000;
+  width: 50%;
+}
+
+.autocomplete-suggestion {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+  background-color: #eee;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 10px;
+  padding: 4px 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-bottom-color: #000;
+}
+/* ---------- FORM FIELD POLISH ---------- */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.label-style {
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  color: #5F5D5D;
+}
+
+/* Inputs & Selects */
+input[type="text"],
+input[type="email"],
+select {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+/* Focus state */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  border-color: #927AA2;
+  box-shadow: 0 0 0 2px rgba(146,122,162,0.15);
+}
+
+/* Readonly fields */
+input[readonly] {
+  background-color: #f7f7f7;
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* Select dropdown arrow cleanup */
+select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #777 50%),
+    linear-gradient(135deg, #777 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) calc(50% + 2px),
+    calc(100% - 12px) calc(50% + 2px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
+
+/* ---------- AUTOCOMPLETE ---------- */
+
+.autocomplete-suggestions {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 4px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.autocomplete-suggestion {
+  padding: 10px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+  background-color: #f2f2f2;
+}
+
+
+.submit-btn {
+  margin-top: 28px;
+  padding: 12px 22px;
+  background: #5F5D5D;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.submit-btn:hover {
+  background: #927AA2;
+  transform: translateY(-1px);
+}
+
+#address {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+</style>
