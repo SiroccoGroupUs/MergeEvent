@@ -82,8 +82,8 @@ Merge Event Web-To-Lead Draft
 
 
 <textarea id="street" name="street" hidden></textarea>
-  <input type="text" id="city" name="city" hidden>
- <input type="text" id="state" name="state" hidden>
+<input type="text" id="city" name="city" hidden>
+<input type="text" id="state" name="state" hidden>
 <input type="text" id="zip" name="zip" hidden>
 
 <div class="form-group">
@@ -128,6 +128,21 @@ Merge Event Web-To-Lead Draft
   </select>
 </div>
 
+<div class="form-group hotel-fieldstyle" style="display:none;">
+  <label class="label-style">WHO IS YOUR SALES CONTACT?</label>
+  <input type="text" id="sales_contact" name="00NWK00000XXXXXX"> <!-- Change ID-->
+</div>
+
+<div class="form-group hotel-fieldstyle" style="display:none;">
+  <label class="label-style">WHO IS YOUR CSM AT THE HOTEL?</label>
+  <input type="text" id="hotel_csm" name="00NWK00000XXXXXX"> <!-- Change ID-->
+</div>
+
+<div class="form-group hotel-fieldstyle" style="display:none;">
+  <label class="label-style">HOTEL COMMISSION %</label>
+  <input type="text" id="hotel_commission" name="00NWK000003zsUn">
+</div>
+
 <div class="form-group">
   <label class="label-style">PROGRAM START DATE</label>
     <input type="date" id="program_start_ui">
@@ -168,6 +183,33 @@ const apiKey = '2ad247c32c5b4d9b9234aab237d6b52f';
 document.addEventListener('DOMContentLoaded', () => {
   const addressInput = document.getElementById('address');
   const autocompleteList = document.getElementById('autocomplete-list');
+  const venueType = document.getElementById('00NWK000003vOdS');
+  const hotelFields = document.querySelectorAll('.hotel-fieldstyle');
+  const dateInputs = document.querySelectorAll('input[type="date"]');
+
+  // Logic to show other fields when Venue Type = Hotel
+  venueType.addEventListener('change', () => {
+    const show = venueType.value === 'Hotel';
+
+    hotelFields.forEach(group => {
+      group.style.display = show ? 'flex' : 'none';
+
+      if (!show) {
+        group.querySelectorAll('input').forEach(input => {
+          input.value = '';
+        });
+      }
+    });
+  });
+
+  // Show calendar when input date fields are clicked anywhere instead of just the Calendar icon
+  dateInputs.forEach(input => {
+    input.addEventListener('click', () => {
+      if (input.showPicker) {
+        input.showPicker();
+      }
+    });
+  });
 
   addressInput.addEventListener('input', () => {
     const value = addressInput.value.trim();
@@ -510,4 +552,7 @@ select {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
+
 </style>
